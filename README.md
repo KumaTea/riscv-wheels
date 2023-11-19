@@ -1,5 +1,5 @@
 # riscv-wheels
-Prebuilt RISC-V wheels (mainly deps for popular packages)
+Prebuilt Python wheels for RISC-V (mainly deps for popular packages)
 
 [![Coverage](https://shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://github.com/KumaTea/riscv-wheels/releases)
 
