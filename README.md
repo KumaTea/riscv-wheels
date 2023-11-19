@@ -6,7 +6,7 @@ Prebuilt RISC-V wheels (mainly deps for popular packages)
 ## How to use
 
 ```bash
-pip install <package> --prefer-binary --extra-index-url https://riscv.kmtea.eu/simple
+pip install <package> --prefer-binary --extra-index-url https://rv.kmtea.eu/simple
 ```
 
 The `--prefer-binary` option is to ensure that
@@ -17,5 +17,15 @@ An alternative way is to use the `--find-links` option,
 which is not recommended because the size of the index is large:
 
 ```bash
-pip install <package> --prefer-binary --find-links https://riscv.kmtea.eu/wheels.html
+pip install <package> --prefer-binary --find-links https://rv.kmtea.eu/wheels.html
 ```
+
+## Notice
+
+Currently, all wheels are built under
+**Ubuntu 22.04 (Jammy)**,
+which is the earliest version that provided
+`buildpack-deps` images for RISC-V.
+
+Before the Python Authority makes its `manylinux`able,
+the wheels will end in `linux_riscv64.whl`.
