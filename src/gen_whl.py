@@ -58,4 +58,4 @@ def gen_html_cdn():
 
 if __name__ == '__main__':
     gen_html()
-    gen_html_cdn()
+    # gen_html_cdn()
