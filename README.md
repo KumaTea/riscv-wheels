@@ -11,12 +11,6 @@ Prebuilt Python wheels for RISC-V (mainly deps for popular packages)
 pip install <package> --prefer-binary --extra-index-url https://ext.kmtea.eu/simple
 ```
 
-Or RISC-V only:
-
-```bash
-pip install <package> --prefer-binary --extra-index-url https://rv.kmtea.eu/simple
-```
-
 The `--prefer-binary` option is to ensure that
 once the source updates, the binary will still be used.
 You may dismiss it at your will.
@@ -25,7 +19,7 @@ An alternative way is to use the `--find-links` option,
 which is not recommended because the size of the index is large:
 
 ```bash
-pip install <package> --prefer-binary --find-links https://rv.kmtea.eu/wheels.html
+pip install <package> --prefer-binary --find-links https://ext.kmtea.eu/wheels.html
 ```
 
 ## Notice
