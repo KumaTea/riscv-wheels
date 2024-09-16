@@ -8,6 +8,12 @@ Prebuilt Python wheels for RISC-V (mainly deps for popular packages)
 ## How to use
 
 ```bash
+pip install <package> --prefer-binary --extra-index-url https://ext.kmtea.eu/simple
+```
+
+Or RISC-V only:
+
+```bash
 pip install <package> --prefer-binary --extra-index-url https://rv.kmtea.eu/simple
 ```
 
@@ -24,13 +30,15 @@ pip install <package> --prefer-binary --find-links https://rv.kmtea.eu/wheels.ht
 
 ## Notice
 
-Currently, all wheels are built under
-**Ubuntu 22.04 (Jammy)**,
+Currently, all wheels will be built under
+**Ubuntu 20.04 (Focal)** (GlibC: 2.31 / GCC: 9.4.0) _first_,
+which is the earliest version of Ubuntu
+that provided images for RISC-V.
+
+For all failed wheels, they will be built under
+**Ubuntu 22.04 (Jammy)** (GlibC: 2.35 / GCC: 11.4.0),
 which is the earliest version that provided
 `buildpack-deps` images for RISC-V.
 
-The `glibc` version of Ubuntu 22.04 is:
-**2.35** (`manylinux_2_35_riscv64` in the future).
-
-Before the Python Authority makes its `manylinux`able,
-the wheels will end in `linux_riscv64.whl`.
+~~Before the Python Authority makes its `manylinux`able, the wheels will end in `linux_riscv64.whl`.~~
+`manylinux_x_y_riscv64` is now available.
